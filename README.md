@@ -54,3 +54,11 @@ Recollection questions-
 * Numerical loops with range
 * Iterating a sliced list
 * loops with list comprehension
+
+See [tuples_basics.py](basics/tuples_basics.py)
+* A tuple is an "unmodifiable" or "immutable" list
+* List -> Tuple, Tuple -> List
+* Slicing a tuple
+* iterating a tuple
+
+
