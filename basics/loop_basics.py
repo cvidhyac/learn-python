@@ -43,16 +43,6 @@ def find_multiples_of_three():
     multiples_of_3 = [val for val in range(3, 31, 3)]
     print(multiples_of_3)
 
-def list_slicing():
-    nums = [num for num in range(1, 100_000)]
-    subset_of_ten_nums = nums[0:10]
-    print(f"Subset of first ten nums - {subset_of_ten_nums}")
-    subset_of_20_30_nums = nums[19:30]
-    print(f"subset of next ten nums form 20 to 30 indexes - {subset_of_20_30_nums}")
-    subset_of_rest = nums[99_000:]
-    print(f"Everything after index 99,000: {subset_of_rest}")
-    subset_of_first_fifty = nums[:50]
-    print(f"First fifty: {subset_of_first_fifty}")
 
 def find_first_three_players():
     players = ["A", "D", "Z", "K", "L", "M"]
@@ -69,5 +59,4 @@ if __name__ == '__main__':
     find_odd_numbers()
     find_cubes()
     find_multiples_of_three()
-    list_slicing()
     find_first_three_players()

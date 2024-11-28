@@ -37,6 +37,7 @@ Skipping practice for number basics -
 * Sorting a list - `sort()`, `sorted()`, `reverse()`, `sort(reverse=True)`
 * List Comprehension
 * List slicing
+* List copying
 
 Recollection questions-
 
@@ -46,3 +47,10 @@ Recollection questions-
 - How to slice a list?
 - What is the index inclusion/exclusion in a range(0, 10) ?
 - What is the index inclusion/exclusion in a slice[0:10] ?
+
+**See [loop_basics.py](basics/loop_basics.py)
+
+* Simple for loop
+* Numerical loops with range
+* Iterating a sliced list
+* loops with list comprehension

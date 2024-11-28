@@ -30,6 +30,26 @@ def list_methods():
     print(f"Remove by value 'grapes' - {example_list}")
 
 
+def list_slicing():
+    nums = [num for num in range(1, 100_000)]
+    subset_of_ten_nums = nums[0:10]
+    print(f"Subset of first ten nums - {subset_of_ten_nums}")
+    subset_of_20_30_nums = nums[19:30]
+    print(f"subset of next ten nums form 20 to 30 indexes - {subset_of_20_30_nums}")
+    subset_of_rest = nums[99_000:]
+    print(f"Everything after index 99,000: {subset_of_rest}")
+    subset_of_first_fifty = nums[:50]
+    print(f"First fifty: {subset_of_first_fifty}")
+
+def shallow_copy_a_list():
+    list_of_nums = [num for num in range(0, 10)]
+    a_copy_of_list = list_of_nums[:]
+    a_copy_of_list.append(10)
+    print(f"Original ist {list_of_nums}")
+    print(f"a copy of the list with additional number - {a_copy_of_list}")
+
 if __name__ == '__main__':
     see_the_world()
     list_methods()
+    list_slicing()
+    shallow_copy_a_list()
