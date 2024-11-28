@@ -75,3 +75,8 @@ Recollection questions-
 * Using dictionaries
 * Iterating dictionaries
 * Accessing nested dictionaries
+
+**See [user_inputs.py](python-crash-course-3rd-ed/user_inputs.py)**
+
+* User inputs
+* while loop

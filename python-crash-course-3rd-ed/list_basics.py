@@ -58,6 +58,11 @@ def search_elements():
             else:
                 print(f"The topping {topping} is not available, choose another one")
 
+def fix_a_list():
+    pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+    while 'cat' in pets:
+        pets.remove('cat')
+    print(pets)
 
 if __name__ == '__main__':
     see_the_world()
@@ -65,3 +70,5 @@ if __name__ == '__main__':
     list_slicing()
     shallow_copy_a_list()
     search_elements()
+    fix_a_list()
+
