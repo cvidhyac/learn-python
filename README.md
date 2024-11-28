@@ -69,3 +69,9 @@ Recollection questions-
 * learn `if-else-elif` pattern
 * learn usage of `in` and `not in` pattern
 * iterating through list using conditionals along the way
+
+**See [dictionary_basics.py](python-crash-course-3rd-ed/dictionary_basics.py)**
+
+* Using dictionaries
+* Iterating dictionaries
+* Accessing nested dictionaries
