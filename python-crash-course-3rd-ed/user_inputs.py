@@ -56,7 +56,8 @@ def copy_lists_over():
         list_two.append(list_one.pop())
     print(list_two)
 
-if __name__ == '__main__':
+
+def run_the_game():
     user_options = {
         1: "rental car reservation",
         2: "restaurant seating",
@@ -81,6 +82,36 @@ if __name__ == '__main__':
             is_valid_option = True
             guess_number = input("Enter a number to play: ")
             if guess_number.isnumeric():
-                is_multiple_of_ten = multiples_of_ten(int(guess_number))
+                multiples_of_ten(int(guess_number))
             else:
                 print("Invalid Selection: Game Over!")
+
+
+def sandwich_orders(sandwiches: list[str]):
+    print(f"sandwiches to be made - {sandwiches}")
+    finished_sandwiches = []
+    if "pastrami" in sandwiches:
+        print("The deli has run out of pastrami, removing all pastrami sandwiches from the order now")
+        while "pastrami" in sandwiches:
+            sandwiches.remove("pastrami")
+        print(f"Now starting to prepare the remaining sandwiches {sandwiches}")
+
+    while sandwiches:
+        prepared_sandwich = sandwiches.pop()
+        finished_sandwiches.append(prepared_sandwich)
+    for sandwich in finished_sandwiches:
+        print(f"I made your {sandwich.title()} sandwich")
+
+def no_pastrami(sandwiches: list[str]):
+    sandwiches.append("pastrami")
+    sandwiches.append("pastrami")
+    sandwiches.append("pastrami")
+
+    sandwich_orders(sandwiches)
+
+if __name__ == '__main__':
+    # run_the_game()
+    sandwiches = ["Cheese", "grilled-cheese", "Veggie", "Green Goddess", "tomato", "Chili"]
+    sandwich_orders(sandwiches[:])
+    no_pastrami(sandwiches[:])
+
