@@ -48,8 +48,20 @@ def shallow_copy_a_list():
     print(f"Original ist {list_of_nums}")
     print(f"a copy of the list with additional number - {a_copy_of_list}")
 
+def search_elements():
+    toppings = ["Mushroom", "Onion", "Pineapple", "Tomato", "Olives"]
+    requested_toppings = ["French Fries", "Mushroom"]
+    if toppings:
+        for topping in requested_toppings:
+            if topping in toppings:
+                print(f"the toppings {topping} is available, adding to pizza " )
+            else:
+                print(f"The topping {topping} is not available, choose another one")
+
+
 if __name__ == '__main__':
     see_the_world()
     list_methods()
     list_slicing()
     shallow_copy_a_list()
+    search_elements()
