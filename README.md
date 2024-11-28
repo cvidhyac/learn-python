@@ -35,9 +35,14 @@ Skipping practice for number basics -
 
 * List basics - add elements, find elements, remove elements
 * Sorting a list - `sort()`, `sorted()`, `reverse()`, `sort(reverse=True)`
+* List Comprehension
+* List slicing
 
 Recollection questions-
 
 - What is the difference between `sort()` and `sorted()`?
 - What is the difference between `reverse()`, and `sort(reverse=True)`?
 - How to retrieve last element from a list?
+- How to slice a list?
+- What is the index inclusion/exclusion in a range(0, 10) ?
+- What is the index inclusion/exclusion in a slice[0:10] ?
