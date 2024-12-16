@@ -107,6 +107,7 @@ Recollection questions-
 * How to pass variable number of arguments(varargs) in a python function (eg. a list of 3 toppings or 5)?
 * What is used to collect non-specific function arguments in a python function?
 
+TODO: Add examples for module imports, module alias and starred imports
 
 
 ## Extra exercises
