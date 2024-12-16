@@ -63,6 +63,8 @@ Recollection questions-
 * List -> Tuple, Tuple -> List
 * Slicing a tuple
 * iterating a tuple
+* Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
+
 
 **See [conditional_basics.py](python-crash-course-3rd-ed/conditionals_basics.py)**
 
@@ -74,9 +76,11 @@ Recollection questions-
 
 * Using dictionaries
 * Iterating dictionaries
-* Accessing nested dictionaries
+* Accessing elements from dictionaries
+* How to convert a dictionary to kwargs? 
+* Printing kwargs, accessing individual elements in kwargs
 
 **See [user_inputs.py](python-crash-course-3rd-ed/user_inputs.py)**
 
 * User inputs
-* while loop
+* while loop - repeating user input until condition is not satisfied

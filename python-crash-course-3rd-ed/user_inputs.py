@@ -87,12 +87,12 @@ def run_the_game():
                 print("Invalid Selection: Game Over!")
 
 
-def sandwich_orders(sandwiches: list[str]):
+def sandwich_orders(list_of_sandwiches: list[str]):
     print(f"sandwiches to be made - {sandwiches}")
     finished_sandwiches = []
-    if "pastrami" in sandwiches:
+    if "pastrami" in list_of_sandwiches:
         print("The deli has run out of pastrami, removing all pastrami sandwiches from the order now")
-        while "pastrami" in sandwiches:
+        while "pastrami" in list_of_sandwiches:
             sandwiches.remove("pastrami")
         print(f"Now starting to prepare the remaining sandwiches {sandwiches}")
 
@@ -102,10 +102,10 @@ def sandwich_orders(sandwiches: list[str]):
     for sandwich in finished_sandwiches:
         print(f"I made your {sandwich.title()} sandwich")
 
-def no_pastrami(sandwiches: list[str]):
-    sandwiches.append("pastrami")
-    sandwiches.append("pastrami")
-    sandwiches.append("pastrami")
+def no_pastrami(list_of_sandwiches: list[str]):
+    list_of_sandwiches.append("pastrami")
+    list_of_sandwiches.append("pastrami")
+    list_of_sandwiches.append("pastrami")
 
     sandwich_orders(sandwiches)
 

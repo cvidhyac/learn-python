@@ -58,6 +58,13 @@ def search_elements():
             else:
                 print(f"The topping {topping} is not available, choose another one")
 
+def merge_two_lists():
+    list_one = [1, 2, 3]
+    list_two = [4, 5, 6]
+    print(f"using concat operator: {list_one + list_two}")
+    list_two.extend(list_one)
+    print(f"using extend method: {list_two}")
+
 def fix_a_list():
     pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
     while 'cat' in pets:
@@ -71,4 +78,5 @@ if __name__ == '__main__':
     shallow_copy_a_list()
     search_elements()
     fix_a_list()
+    merge_two_lists()
 

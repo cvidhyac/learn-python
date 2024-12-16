@@ -3,6 +3,9 @@ def print_person_details(first_name: str, last_name: str, age: int, city: str):
     print(f"Person details {person}")
 
 
+def print_person_details_as_kwargs(**kwargs):
+    print(f"Attributes are {kwargs['first_name']} {kwargs['last_name']} {kwargs['age']}")
+
 def print_favorite_numbers():
     person_and_lucky_numbers = {"John": 5, "Jane": 10}
     for person_name, lucky_number in person_and_lucky_numbers.items():
@@ -13,6 +16,14 @@ def sorting_a_dictionary():
     person_and_age = {"Mary": 23, "Joe": 35, "Albert": 56, "Diana": 97, "George": 15}
     for person in sorted(person_and_age.keys()):
         print(f"Sorted Alphabetically, person is : {person}")
+
+def dictionary_as_kwargs() :
+    person = {
+        "first_name": "john",
+        "last_name": "doe",
+        "age": 20
+    }
+    return person
 
 
 def polling_favorite_languages(person: str):
@@ -69,3 +80,4 @@ if __name__ == '__main__':
     polling_favorite_languages("Ellie")
     print_favorite_places()
     print_nested_dictionary()
+    print_person_details_as_kwargs(**dictionary_as_kwargs())
