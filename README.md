@@ -56,6 +56,8 @@ Recollection questions-
 * Numerical loops with range
 * Iterating a sliced list
 * loops with list comprehension
+* How to check if list is empty?
+* How to check if list is not empty?
 
 **See [tuples_basics.py](python-crash-course-3rd-ed/tuples_basics.py)**
 
@@ -84,3 +86,8 @@ Recollection questions-
 
 * User inputs
 * while loop - repeating user input until condition is not satisfied
+
+
+## Extra exercises
+
+* Finding ordinal number prefixes for given number range
