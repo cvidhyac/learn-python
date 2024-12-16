@@ -40,6 +40,10 @@ Skipping practice for number basics -
 * List Comprehension
 * List slicing
 * List copying
+* Find Size of a list or tuple
+* How to check if list is empty?
+* How to check if list is not empty?
+* Remove duplicates from a list
 
 Recollection questions-
 
@@ -56,8 +60,6 @@ Recollection questions-
 * Numerical loops with range
 * Iterating a sliced list
 * loops with list comprehension
-* How to check if list is empty?
-* How to check if list is not empty?
 
 **See [tuples_basics.py](python-crash-course-3rd-ed/tuples_basics.py)**
 
@@ -66,7 +68,6 @@ Recollection questions-
 * Slicing a tuple
 * iterating a tuple
 * Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
-
 
 **See [conditional_basics.py](python-crash-course-3rd-ed/conditionals_basics.py)**
 
@@ -77,16 +78,20 @@ Recollection questions-
 **See [dictionary_basics.py](python-crash-course-3rd-ed/dictionary_basics.py)**
 
 * Using dictionaries
-* Iterating dictionaries
+* Modifying value in a dictionary for one of the keys
+* Deleting a key from a dictionary
+* What is the difference between using square brackets to retrieve a value from a dictionary vs using `get()`
+* Iterating dictionaries using `items()`, `keys()`, `values()`
+* What is the default behaviour neither of the 3 options above for items, keys values are not specified in
+  looping condition?
 * Accessing elements from dictionaries
-* How to convert a dictionary to kwargs? 
+* How to convert a dictionary to kwargs?
 * Printing kwargs, accessing individual elements in kwargs
 
 **See [user_inputs.py](python-crash-course-3rd-ed/user_inputs.py)**
 
 * User inputs
 * while loop - repeating user input until condition is not satisfied
-
 
 ## Extra exercises
 

@@ -60,10 +60,14 @@ def search_elements():
 
 def merge_two_lists():
     list_one = [1, 2, 3]
-    list_two = [4, 5, 6]
+    list_two = [15, 20, 10, 5, 25, 5]
     print(f"using concat operator: {list_one + list_two}")
     list_two.extend(list_one)
     print(f"using extend method: {list_two}")
+    return list_two
+
+def list_remove_duplicates():
+    print(f"{set(merge_two_lists())}")
 
 def fix_a_list():
     pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
@@ -79,4 +83,4 @@ if __name__ == '__main__':
     search_elements()
     fix_a_list()
     merge_two_lists()
-
+    list_remove_duplicates()
