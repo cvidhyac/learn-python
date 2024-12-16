@@ -57,6 +57,7 @@ Recollection questions-
 **See [loop_basics.py](python-crash-course-3rd-ed/loop_basics.py)**
 
 * Simple for loop
+* How to exit a for loop if something is found?
 * Numerical loops with range
 * Iterating a sliced list
 * loops with list comprehension
@@ -91,7 +92,22 @@ Recollection questions-
 **See [user_inputs.py](python-crash-course-3rd-ed/user_inputs.py)**
 
 * User inputs
-* while loop - repeating user input until condition is not satisfied
+* `while` loop - repeating user input until condition is not satisfied
+* How to exit a `while` loop?
+* Can you think of a way to populate a dictionary using user inputs?
+
+**Function basics**
+
+* What are the 2 ways of passing arguments to functions? What is the default?
+* How to pass keyword arguments to pass values to functions?
+* Pitfalls of positional arguments?
+* How to make a specific argument passed to a method as optional? 
+  - for eg., - among first_name, middle_name, last_name how to make middle_name optional
+* How to prevent a function from modifying an original copy of a `list` data structure?
+* How to pass variable number of arguments(varargs) in a python function (eg. a list of 3 toppings or 5)?
+* What is used to collect non-specific function arguments in a python function?
+
+
 
 ## Extra exercises
 
