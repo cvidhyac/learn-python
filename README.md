@@ -96,19 +96,21 @@ Recollection questions-
 * How to exit a `while` loop?
 * Can you think of a way to populate a dictionary using user inputs?
 
-**Function basics**
+**Function basics See - [functions_basics.py](python-crash-course-3rd-ed/functions_basics.py)**
 
 * What are the 2 ways of passing arguments to functions? What is the default?
 * How to pass keyword arguments to pass values to functions?
 * Pitfalls of positional arguments?
 * How to make a specific argument passed to a method as optional? 
-  - for eg., - among first_name, middle_name, last_name how to make middle_name optional
+  - for e.g., - among first_name, middle_name, last_name how to make middle_name optional
 * How to prevent a function from modifying an original copy of a `list` data structure?
-* How to pass variable number of arguments(varargs) in a python function (eg. a list of 3 toppings or 5)?
+* How to pass arbitrary number of arguments(varargs) in a python function (eg. a list of 3 toppings or 5)?
 * What is used to collect non-specific function arguments in a python function?
 
-TODO: Add examples for module imports, module alias and starred imports
-
+* Are there any restrictions in where the positional arguments or kwargs can be located in a function declaration?
+  (hint: yes, at the end)
+* How to import all the functions in a module?
+* 
 
 ## Extra exercises
 
