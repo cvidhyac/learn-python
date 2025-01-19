@@ -110,7 +110,13 @@ Recollection questions-
 * Are there any restrictions in where the positional arguments or kwargs can be located in a function declaration?
   (hint: yes, at the end)
 * How to import all the functions in a module?
-* 
+* How does relative import work in python - how to import projects/restaurants/restaurant.py in projects/tryit/ex1.py
+* What is the IDE setting if imports doesnt resolve (hint: Mark as sources root)
+
+** Working with Classes, see - [Classes exercises](python-crash-course-3rd-ed/tryit)
+
+* [Example with class instantiation and relative imports](python-crash-course-3rd-ed/relative_imports.py)
+
 
 ## Extra exercises
 
