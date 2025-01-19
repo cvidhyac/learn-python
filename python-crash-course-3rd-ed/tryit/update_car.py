@@ -1,4 +1,4 @@
-from cars.models import create_car, Car
+from cars.car import create_car, Car
 
 
 def update_car_details(obj: Car, reading: int):

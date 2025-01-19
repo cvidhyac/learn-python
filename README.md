@@ -113,10 +113,17 @@ Recollection questions-
 * How does relative import work in python - how to import projects/restaurants/restaurant.py in projects/tryit/ex1.py
 * What is the IDE setting if imports doesnt resolve (hint: Mark as sources root)
 
-** Working with Classes, see - [Classes exercises](python-crash-course-3rd-ed/tryit)
+**Working with Classes, see - [Classes exercises](python-crash-course-3rd-ed/tryit)**
 
 * [Example with class instantiation and relative imports](python-crash-course-3rd-ed/relative_imports.py)
+* How does inheritance work in python?
+* How to access variables in parent class in child class?
+* How to import multiple classes from a module?
+* How to import entire module?
+* How does alias help in imports?
 
+**Python Standard library**
+* Example for `random` and using `randInt`, see [Random Dice](python-crash-course-3rd-ed/random_dice.py)
 
 ## Extra exercises
 

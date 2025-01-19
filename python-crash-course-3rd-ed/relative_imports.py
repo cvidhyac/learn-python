@@ -1,6 +1,6 @@
 from tryit.try9192 import *
 from tryit.update_car import exec_car
-from cars.models import Car
+from cars.car import Car
 
 
 def print_car_info():

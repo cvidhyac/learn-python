@@ -13,9 +13,14 @@ class Car:
         self.year = year
         self.odometer_reading = 0
 
+
+    def fill_gas_tank(self):
+        self.gas_tank_capacity = 200
+        self.is_gas_tank_full = True
+
     def increment_odometer_reading(self, increment_value:int):
         self.odometer_reading += increment_value
-        
+
     def set_odometer_reading(self, reading:int):
         self.odometer_reading = reading
 
