@@ -13,6 +13,9 @@ class Car:
         self.year = year
         self.odometer_reading = 0
 
+    def increment_odometer_reading(self, increment_value:int):
+        self.odometer_reading += increment_value
+        
     def set_odometer_reading(self, reading:int):
         self.odometer_reading = reading
 
