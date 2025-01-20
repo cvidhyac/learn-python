@@ -124,6 +124,8 @@ Recollection questions-
 
 **Python Standard library**
 * Example for `random` and using `randInt`, see [Random Dice](python-crash-course-3rd-ed/random_dice.py)
+* Example for `random.sample`, see [Lottery analysis](python-crash-course-3rd-ed/lottery_analysis.py)
+* 
 
 ## Extra exercises
 
