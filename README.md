@@ -127,6 +127,10 @@ Recollection questions-
 * Example for `random.sample`, see [Lottery analysis](python-crash-course-3rd-ed/lottery_analysis.py)
 * Class naming conventions (hint: )
 
+**Working With Files, see [Files Basics](python-crash-course-3rd-ed/reading_from_files)**
+* How to open a file path and print contents?
+* How to split a file to lines, then concatenate it without whitespace characters
+
 ## Extra exercises
 
 * Finding ordinal number prefixes for given number range
