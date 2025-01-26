@@ -61,6 +61,7 @@ def search_elements():
 def merge_two_lists():
     list_one = [1, 2, 3]
     list_two = [15, 20, 10, 5, 25, 5]
+    #The difference between the 2 approaches is that + produces new object, extend() merges list onto the first list.
     print(f"using concat operator: {list_one + list_two}")
     list_two.extend(list_one)
     print(f"using extend method: {list_two}")

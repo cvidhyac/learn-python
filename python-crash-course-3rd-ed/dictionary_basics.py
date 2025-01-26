@@ -71,6 +71,8 @@ def print_nested_dictionary():
         }
     }
     for user_name, user_info in my_website_users.items():
+        # Using get() to retrieve an element from dictionary returns None if element is not present
+        # If it was retrieved using square brackets throws KeyError if element is not present
         print(f"{user_name}'s real name is {user_info.get('first_name').title()} {user_info.get('last_name').title()}")
 
 if __name__ == '__main__':

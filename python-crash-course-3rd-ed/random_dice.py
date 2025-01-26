@@ -5,6 +5,9 @@ import random
 
 
 class Die:
+    """
+    Define a die class that uses random package to predict the outcome of a random dice roll
+    """
 
     def __init__(self, sides:int = 6):
         self.sides = sides

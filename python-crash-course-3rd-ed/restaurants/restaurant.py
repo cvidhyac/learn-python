@@ -1,6 +1,9 @@
 
 
 class Restaurant:
+    """
+    Define a restaurant class and print if it is open or not
+    """
 
     # define constructor
     def __init__(self, restaurant_name:str, cuisine_type:str):

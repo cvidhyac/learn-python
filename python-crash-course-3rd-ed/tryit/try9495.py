@@ -1,15 +1,18 @@
-
 class Restaurant:
+    """
+    Define a Restaurant class that accepts a name and cuisine, it has methods to print customers
+    served and restaurant details
+    """
 
-    def __init__(self, name:str, cuisine:str):
+    def __init__(self, name: str, cuisine: str):
         self.name = name
         self.cuisine = cuisine
         self.number_served = 0
 
-    def set_number_served(self, num_to_update:int):
+    def set_number_served(self, num_to_update: int):
         self.number_served = num_to_update
 
-    def increment_number_served(self, value:int):
+    def increment_number_served(self, value: int):
         self.number_served += value
 
     def print_restaurant_details(self):
@@ -20,9 +23,12 @@ class Restaurant:
         }
         print(f"Restaurant stats for today is: {restaurant_details}")
 
-class User:
 
-    def __init__(self, first_name:str, last_name:str):
+class User:
+    """
+    Create a User class that accepts first_name, last_name, has methods to greet user and print login attempts
+    """
+    def __init__(self, first_name: str, last_name: str):
         self.first_name = first_name
         self.last_name = last_name
         self.login_attempts = 0
@@ -44,11 +50,13 @@ class User:
     def reset_login_attempts(self):
         self.login_attempts = 0
 
+
 def exec_restaurant_operations():
     restaurant = Restaurant("Saffron", "European")
     restaurant.set_number_served(100)
     restaurant.increment_number_served(10)
     restaurant.print_restaurant_details()
+
 
 def exec_user_login():
     user = User("John", "Doe")
