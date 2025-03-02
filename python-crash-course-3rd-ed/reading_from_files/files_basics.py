@@ -25,7 +25,15 @@ class FilesExample:
             as_line_str += line.strip()
         return as_line_str
 
+    def count_words_in_file(self) -> int:
+        words = self._read_contents().split()
+        return len(words)
+
 if __name__ == "__main__":
     filesObj = FilesExample('../text_files/pi_digits.txt')
     filesObj.print_file_as_lines()
     print(f"Value Of Pi: {filesObj.concat_lines_to_one_line()}")
+
+    another_file = FilesExample("../text_files/lorem_ipsum.txt")
+    num_of_words = another_file.count_words_in_file()
+    print(f"Number of words in this text file is {num_of_words}")
