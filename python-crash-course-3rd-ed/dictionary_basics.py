@@ -43,6 +43,15 @@ def polling_favorite_languages(person: str):
         "Maggie": "Java",
         "Nathan": "Rust"
     }
+    temp_dict = devs_and_programming
+    print(f"dictionary size before deletion : {len(temp_dict)}")
+    del temp_dict["Abe"]
+    temp_dict.pop("Fiona")
+    temp_dict.popitem() # Deletes the last inserted item since python 3.7, before that it used be a random element
+    print(f"Dictionary size after deletion: {len(devs_and_programming)}")
+    temp_dict.clear()
+    print(f"Temporary dictionary is cleared, length: {len(temp_dict)}!")
+
     has_person_taken_the_poll = devs_and_programming.get(person, f"{person} did not take the poll yet!")
     print(has_person_taken_the_poll)
     unique_programming_languages = set(devs_and_programming.values())

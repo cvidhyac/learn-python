@@ -1,14 +1,27 @@
 # learn-python repository
 
-## Udemy - Automate with Python
+## Learning resources
 
-* Python refresher course <br/>
+I used the following learning resources to document my learning journey and for keeping
+track of how well I can recollect the concepts after taking a break.
+
+### Udemy - Automate with Python
+
+* Python refresher course (I don't recollect which one i used) <br/>
 * Projects and code : <br/>
   Refer repository directory: [udemy-automate-with-python](udemy-automate-with-python/README.md)
 
-## Python basics
+From my personal experience taking this route, i learned that while online courses are good for basics,
+they are unable to cover the depth you could gain by reading ONE book.
 
-**Reading book - Python crash course 3rd edition by Eric Mathes**
+### Python Books
+
+These are the books that i have used for my personal learning journey and for practice.
+
+- **[Automate Boring Stuff with Python](https://automatetheboringstuff.com/)**
+- **[Python crash course 3rd edition by Eric Mathes](https://ehmatthes.github.io/pcc_3e/)**
+
+## Refresher Notes
 
 ### Start a python virtualenv
 
@@ -80,11 +93,11 @@ Recollection questions-
 
 * Using dictionaries
 * Modifying value in a dictionary for one of the keys
-* Deleting a key from a dictionary
+* Deleting a key from a dictionary (3 ways). How to empty a dictionary?
 * What is the difference between using square brackets to retrieve a value from a dictionary vs using `get()`
 * Iterating dictionaries using `items()`, `keys()`, `values()`
-* What is the default behaviour neither of the 3 options above for items, keys values are not specified in
-  looping condition?
+* What is the default behaviour when neither of the 3 options above are qualified in a `for` loop explicitly, i.e., keys
+  values are not specified in looping condition?
 * Accessing elements from dictionaries
 * How to convert a dictionary to kwargs?
 * Printing kwargs, accessing individual elements in kwargs
@@ -101,21 +114,23 @@ Recollection questions-
 * What are the 2 ways of passing arguments to functions? What is the default?
 * How to pass keyword arguments to pass values to functions?
 * Pitfalls of positional arguments?
-* How to make a specific argument passed to a method as optional? 
-  - for e.g., - among first_name, middle_name, last_name how to make middle_name optional
+* How to make a specific argument passed to a method as optional?
+    - for e.g., - among first_name, middle_name, last_name how to make middle_name optional
 * How to prevent a function from modifying an original copy of a `list` data structure?
 * How to pass arbitrary number of arguments(varargs) in a python function (eg. a list of 3 toppings or 5)?
 * What is used to collect non-specific function arguments in a python function?
 
 * Are there any restrictions in where the positional arguments or kwargs can be located in a function declaration?
   (hint: yes, at the end)
-* How to import all the functions in a module?
-* How does relative import work in python - how to import projects/restaurants/restaurant.py in projects/tryit/ex1.py
-* What is the IDE setting if imports doesnt resolve (hint: Mark as sources root)
+* Recollect the different ways to import modules and functions in python. How to import all the functions in a module?
+* How does relative import work in python. Explain how to import `projects/restaurants/restaurant.py` in
+  another module `projects/tryit/ex1.py`
+* What is the IDE setting if imports doesn't resolve (hint: Mark as sources root)
 
 **Working with Classes, see - [Classes exercises](python-crash-course-3rd-ed/tryit)**
 
-* [Example with class instantiation and relative imports](python-crash-course-3rd-ed/relative_imports.py)
+**See [Example with class instantiation and relative imports](python-crash-course-3rd-ed/relative_imports.py)**
+
 * How does inheritance work in python?
 * How to access variables in parent class in child class?
 * How to import multiple classes from a module?
@@ -123,14 +138,17 @@ Recollection questions-
 * How does alias help in imports?
 
 **Python Standard library**
+
 * Example for `random` and using `randInt`, see [Random Dice](python-crash-course-3rd-ed/random_dice.py)
 * Example for `random.sample`, see [Lottery analysis](python-crash-course-3rd-ed/lottery_analysis.py)
 * Class naming conventions (hint: )
 
 **Working With Files, see [Files Basics](python-crash-course-3rd-ed/reading_from_files)**
+
 * How to open a file path and print contents?
 * How to split a file to lines, then concatenate it without whitespace characters
 
-## Extra exercises
+**Exception Handling, see [exception basics](python-crash-course-3rd-ed/exception_basics.py)**
 
-* Finding ordinal number prefixes for given number range
+* What happens if a try-except block is not defined?
+* How to execute a condition only if try block was successful?
