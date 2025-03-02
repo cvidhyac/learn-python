@@ -29,6 +29,7 @@ class FilesExample:
         words = self._read_contents().split()
         return len(words)
 
+
 if __name__ == "__main__":
     filesObj = FilesExample('../text_files/pi_digits.txt')
     filesObj.print_file_as_lines()
