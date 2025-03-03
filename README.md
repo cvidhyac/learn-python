@@ -152,3 +152,6 @@ Recollection questions-
 
 * What happens if a try-except block is not defined?
 * How to execute a condition only if try block was successful?
+
+**JSON Module, see [storing data basics](python-crash-course-3rd-ed/storing_data.py)**
+* What is the difference between `json.dumps()` and `json.loads()`, when to use this?
