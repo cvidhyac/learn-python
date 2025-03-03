@@ -29,6 +29,13 @@ def use_prefix_methods():
     print("---------")
     print(f"{test_string_one}\t{test_string_two}")
 
+def get_formatted_name(first_name:str, last_name:str):
+    if len(first_name.strip()) <= 0:
+        raise ValueError("First name is empty")
+    elif len(last_name.strip()) <=0:
+        raise ValueError("Last name is empty")
+    else:
+        return f"{first_name} {last_name}".title()
 
 if __name__ == '__main__':
     use_fstring()
