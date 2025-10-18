@@ -57,6 +57,8 @@ Skipping practice for number basics -
 * How to check if list is empty?
 * How to check if list is not empty?
 * Remove duplicates from a list
+* How to skip count in a list?
+* What is the difference between sequence-controlled iteration and sentinel controlled iteration?
 
 Recollection questions-
 

@@ -29,6 +29,9 @@ def list_methods():
     example_list.remove('Grapes')
     print(f"Remove by value 'grapes' - {example_list}")
 
+def skip_counting():
+    even_nums = [num for num in range(0, 10, 2)]
+    print(f"{even_nums}")
 
 def list_slicing():
     nums = [num for num in range(1, 100_000)]
@@ -85,3 +88,4 @@ if __name__ == '__main__':
     fix_a_list()
     merge_two_lists()
     list_remove_duplicates()
+    skip_counting()
