@@ -40,7 +40,7 @@ source venv/bin/activate
     * newlines and tabs - `\n` and `\t`
     * stripping whitespace - `lstrip()`, `rstrip()`, `strip()`
     * prefix methods - `removePrefix()`, `removeSuffix()`
-
+* Can you slice a string? What is the rule to remember when slicing?
 Skipping practice for number basics -
 
 - REPL shell - `+`, `-`
@@ -55,7 +55,7 @@ Skipping practice for number basics -
 * List copying
 * Find Size of a list or tuple
 * How to check if list is empty?
-* How to check if list is not empty?
+* How to check if list is not empty? (Hint: Implicit boolean, pythonic)
 * Remove duplicates from a list
 * How to skip count in a list?
 * What is the difference between sequence-controlled iteration and sentinel controlled iteration?
@@ -81,7 +81,7 @@ Recollection questions-
 
 * A tuple is an "unmodifiable" or "immutable" list
 * List -> Tuple, Tuple -> List
-* Slicing a tuple
+* Slicing a tuple - How to skip count when slicing a tuple? Can you slice a string?
 * iterating a tuple
 * Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
 

@@ -3,12 +3,12 @@ def see_the_world():
     print(f"The original list of locations: {locations}")
     sorted_list = sorted(locations)
     print(f" The sorted list - {sorted_list}")
-    sorted_list.reverse()
-    print(f"The reversed list {sorted_list}")
+    locations.reverse()
+    print(f"The reversed list {locations}") #reversed without sorting in the same order defined
     another_locations = locations
     another_locations.sort()
     print(f"List copied over to - {another_locations}")
-    another_locations.sort(reverse=True)
+    another_locations.sort(reverse=True) # reverse after sorting
     print(f"Another locations reversed - {another_locations}")
     print(f"Check on original locations again {locations}")
     print(f"check list size - {len(locations)}")
@@ -79,6 +79,19 @@ def fix_a_list():
         pets.remove('cat')
     print(pets)
 
+"""
+Python uses implicit boolean evaluation for list object contains checks. The implicit boolean check will return
+false for an empty list that doesn't contain any elements. If it contained elements, it will return True.
+"""
+def list_empty_check():
+    nums = [num for num in range(1, 10, 3)]
+    if nums:
+        ref_nums = nums[:]
+        ref_nums.sort(reverse=True)
+        print(f"List not empty, print sorted reverse value: {ref_nums}")
+    else:
+        print(f"List is empty, so print list ascending: {nums}")
+
 if __name__ == '__main__':
     see_the_world()
     list_methods()
@@ -89,3 +102,4 @@ if __name__ == '__main__':
     merge_two_lists()
     list_remove_duplicates()
     skip_counting()
+    list_empty_check()
