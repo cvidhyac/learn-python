@@ -41,6 +41,16 @@ source venv/bin/activate
     * stripping whitespace - `lstrip()`, `rstrip()`, `strip()`
     * prefix methods - `removePrefix()`, `removeSuffix()`
 * Can you slice a string? What is the rule to remember when slicing?
+* How to reverse a string
+* How to find a substring within a given string
+* What is the difference between `find` and `index` methods in string?
+
+**See - [operators_basics.py](python-crash-course-3rd-ed/operators_basics.py)**
+* What are the membership check operators in python?
+* What are the common operators in python?
+* What is the difference between `\\` and `\` division operator in python? (Hint: Integer division vs floating point)
+
+
 Skipping practice for number basics -
 
 - REPL shell - `+`, `-`
