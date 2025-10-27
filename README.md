@@ -49,7 +49,9 @@ source venv/bin/activate
 * What are the membership check operators in python?
 * What are the common operators in python?
 * What is the difference between `\\` and `\` division operator in python? (Hint: Integer division vs floating point)
-
+* What are the membership operators in python?
+* What are the identity operators in python?
+* Explain Operator Precedence
 
 Skipping practice for number basics -
 
