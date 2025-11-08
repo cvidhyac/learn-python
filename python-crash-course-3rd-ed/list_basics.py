@@ -13,7 +13,11 @@ def see_the_world():
     print(f"Check on original locations again {locations}")
     print(f"check list size - {len(locations)}")
 
-def list_methods():
+"""
+What are all the wonderful things a list can do, and cannot do - 
+
+"""
+def features_of_a_list():
     example_list = ["Apple", "Banana", "Cherry", "Grapes", "Oranges"]
     print(f"The original list {example_list}")
     example_list.append("Strawberries")
@@ -33,6 +37,9 @@ def skip_counting():
     even_nums = [num for num in range(0, 10, 2)]
     print(f"{even_nums}")
 
+"""
+Use slicing operator to extract specific elements from list
+"""
 def list_slicing():
     nums = [num for num in range(1, 100_000)]
     subset_of_ten_nums = nums[0:10]
@@ -43,6 +50,18 @@ def list_slicing():
     print(f"Everything after index 99,000: {subset_of_rest}")
     subset_of_first_fifty = nums[:50]
     print(f"First fifty: {subset_of_first_fifty}")
+    list_of_nums = [x for x in range(0, 100)]
+    print(f"Slicing with skip counting and only include every two numbers from list: {list_of_nums[::2]}")
+
+
+def some_more_list_slicing_tricks():
+    list_of_nums = [n * 10 for n in range(1, 11)]
+    list_of_nums.reverse()
+    print(list_of_nums)
+    fruits = ["apple", "orange"]
+    print(f"Now print, 4 elements from the list from a non zero index using slicing: {list_of_nums[6: 2: -1]}")
+    list_of_nums[4: 6] = fruits
+    print(f"Lets replace these elements with fruits: {list_of_nums}")
 
 def shallow_copy_a_list():
     list_of_nums = [num for num in range(0, 10)]
@@ -94,8 +113,9 @@ def list_empty_check():
 
 if __name__ == '__main__':
     see_the_world()
-    list_methods()
+    features_of_a_list()
     list_slicing()
+    some_more_list_slicing_tricks()
     shallow_copy_a_list()
     search_elements()
     fix_a_list()

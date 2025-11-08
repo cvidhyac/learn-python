@@ -51,7 +51,7 @@ source venv/bin/activate
 * What is the difference between `\\` and `\` division operator in python? (Hint: Integer division vs floating point)
 * What are the membership operators in python?
 * What are the identity operators in python?
-* Explain Operator Precedence
+* Explain Operator Precedence (hint: P E D M A S rule)
 
 Skipping practice for number basics -
 
@@ -71,6 +71,7 @@ Skipping practice for number basics -
 * Remove duplicates from a list
 * How to skip count in a list?
 * What is the difference between sequence-controlled iteration and sentinel controlled iteration?
+* Explain how tuple unpacking works? when is it useful? (hint: see [gcd-with-tuple-unpacking](practice/greatest-common-divisor.py))
 
 Recollection questions-
 
@@ -80,6 +81,7 @@ Recollection questions-
 - How to slice a list?
 - What is the index inclusion/exclusion in a range(0, 10) ?
 - What is the index inclusion/exclusion in a slice[0:10] ?
+- How to replace a slice of a list with another list? see - [slicing_tricks](python-crash-course-3rd-ed/list_basics.py)
 
 **See [loop_basics.py](python-crash-course-3rd-ed/loop_basics.py)**
 
@@ -88,6 +90,7 @@ Recollection questions-
 * Numerical loops with range
 * Iterating a sliced list
 * loops with list comprehension
+* Explain while-else? When does the else condition set after the `while` statement fail to execute?
 
 **See [tuples_basics.py](python-crash-course-3rd-ed/tuples_basics.py)**
 
@@ -102,7 +105,6 @@ Recollection questions-
 * learn `if-else-elif` pattern
 * learn usage of `in` and `not in` pattern
 * iterating through list using conditionals along the way
-
 **See [dictionary_basics.py](python-crash-course-3rd-ed/dictionary_basics.py)**
 
 * Using dictionaries
