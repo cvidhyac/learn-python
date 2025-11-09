@@ -53,6 +53,9 @@ source venv/bin/activate
 * What are the identity operators in python?
 * Explain Operator Precedence (hint: P E D M A S rule)
 
+**See [Shallow vs deep copy](python-crash-course-3rd-ed/shallow-deep-copy.py)
+What is the difference between shallow and deep copy?
+
 Skipping practice for number basics -
 
 - REPL shell - `+`, `-`
@@ -99,12 +102,26 @@ Recollection questions-
 * Slicing a tuple - How to skip count when slicing a tuple? Can you slice a string?
 * iterating a tuple
 * Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
+* Explain the use of `zip` data structure, when is it useful?
+
+**See [set_basics.py](python-crash-course-3rd-ed/set_basics.py)**
+
+* What type of data can be added to set? (hint - hashable vs unhashable)
+* Recollect methods for set operations
+* Difference between remove and discard
+* Union, Intersection and symmetric differences in sets
 
 **See [conditional_basics.py](python-crash-course-3rd-ed/conditionals_basics.py)**
 
 * learn `if-else-elif` pattern
 * learn usage of `in` and `not in` pattern
 * iterating through list using conditionals along the way
+
+**Hashing concept in python [Hashing example](python-crash-course-3rd-ed/hashing.py)**
+
+* What makes a data structure hashable?
+* What is the real life use case to use a hashable data structure over a non-hashable data structure?
+
 **See [dictionary_basics.py](python-crash-course-3rd-ed/dictionary_basics.py)**
 
 * Using dictionaries
