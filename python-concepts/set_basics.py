@@ -25,6 +25,7 @@ def explain_set_operations(a_set_of_nums:set) -> None:
     second_set = {5, 6, "Orange"}
     a_set_of_nums.update(second_set)
     print(a_set_of_nums)
+    # Difference between remove and discard method in a python set - discard is quieter, remove throws exception
     a_set_of_nums.remove("Apple")
     print(f"After removing apple: {a_set_of_nums}")
     a_set_of_nums.discard("Poppy")

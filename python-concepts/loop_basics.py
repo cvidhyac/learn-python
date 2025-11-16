@@ -96,6 +96,24 @@ def print_triangles_with_string_repetition():
     for i in range(1, num):
         print(i * str(i))
 
+
+"""
+Enumerate helps to combine the indices of a list/iterable and create a tuple out of its indices and the value itself.
+"""
+def example_of_enumerate():
+    a_list_of_items = {
+        "fruit": ["apple", "banana", "cherry"],
+        "vegetables": ["tomato", "potato", "peppers"],
+        "snacks": ["cookies", "crisps", "tacos"],
+        "condiments": ["guacamole", "ketchup"]
+    }
+
+    final_list=[]
+    for item in enumerate(a_list_of_items.values()):
+        final_list.append(item)
+    print(final_list)
+
+
 if __name__ == '__main__':
     for_loop_using_list_comprehension()
     simple_for_loop()
@@ -112,3 +130,4 @@ if __name__ == '__main__':
     example_of_continue()
     print_triangles(5)
     print_triangles_with_string_repetition()
+    example_of_enumerate()

@@ -1,3 +1,44 @@
+"""
+Since Python 3.7, dictionary maintains insertion order.
+It is a hashable data structure, keys can only be immutable types/hashable types. For example, list cannot be a key.
+However, values can be unhashed types, a value corresponding to a key can be mutable/unhashed type.
+
+The benefit of using hash based data structure is quick retrieval, saves searching time.
+"""
+
+
+def explain_dictionary_methods():
+    example_dict = {
+        "myTuple": (1, 2, 3, 4),
+        "myList": [1, 2, 3, 4]
+    }
+    print(f"this is an example {type(example_dict)} type")
+    print(f"Print all keys: {example_dict.keys()}, all values: {example_dict.values()}")
+
+    # Edit existing set to insert value
+    example_dict["mySet"] = {1, 2, 4, 5, 2}
+
+    # Iterate over a dictionary without unpacking items
+    for item in example_dict:
+        print(f"Iteration : Key: {item},  Value: {example_dict[item]} of type {type(example_dict[item])}")
+
+    for as_tuple in example_dict.items():
+        print(f"The tuple returned Key: {as_tuple[0]} and value is {as_tuple[1]}")
+
+    print(f"Removing specific key from the set : {example_dict.pop("mySet")}")
+    print(f"Removing last inserted item using popItem method: {example_dict.popitem()}")
+
+    # Update existing set to change values
+    example_dict["mySecondList"] = ["Apple", "Orange", "Banana"]
+    example_dict["mySecondList"] = [5, 6, 7, "Apple"]
+    print(f"Updated element from the given dictionary has value: {example_dict.get("mySecondList")}")
+
+    # Empty the dictionary
+    example_dict.clear()
+    print(f"After clearing, the dictionary size is: {len(example_dict)}")
+
+
+
 def print_person_details(first_name: str, last_name: str, age: int, city: str):
     person = {"first_name": first_name, "last_name": last_name, "age": age, "city": city}
     print(f"Person details {person}")
@@ -5,6 +46,7 @@ def print_person_details(first_name: str, last_name: str, age: int, city: str):
 
 def print_person_details_as_kwargs(**kwargs):
     print(f"Attributes are {kwargs['first_name']} {kwargs['last_name']} {kwargs['age']}")
+
 
 def print_favorite_numbers():
     person_and_lucky_numbers = {"John": 5, "Jane": 10}
@@ -17,7 +59,8 @@ def sorting_a_dictionary():
     for person in sorted(person_and_age.keys()):
         print(f"Sorted Alphabetically, person is : {person}")
 
-def dictionary_as_kwargs() :
+
+def dictionary_as_kwargs():
     person = {
         "first_name": "john",
         "last_name": "doe",
@@ -47,7 +90,7 @@ def polling_favorite_languages(person: str):
     print(f"dictionary size before deletion : {len(temp_dict)}")
     del temp_dict["Abe"]
     temp_dict.pop("Fiona")
-    temp_dict.popitem() # Deletes the last inserted item since python 3.7, before that it used be a random element
+    temp_dict.popitem()  # Deletes the last inserted item since python 3.7, before that it used be a random element
     print(f"Dictionary size after deletion: {len(devs_and_programming)}")
     temp_dict.clear()
     print(f"Temporary dictionary is cleared, length: {len(temp_dict)}!")
@@ -60,13 +103,14 @@ def polling_favorite_languages(person: str):
     for prog_lang in unique_programming_languages:
         print(f"number of people that like {prog_lang}: {total_language_list.count(prog_lang)}")
 
-def print_favorite_places() :
-    my_favorite_places = { "John": "Vienna", "Sidney": "Florida", "Albert": "Banff"}
+
+def print_favorite_places():
+    my_favorite_places = {"John": "Vienna", "Sidney": "Florida", "Albert": "Banff"}
     for person, favorite_place in my_favorite_places.items():
         print(f"Favourite place of {person} is {favorite_place}")
 
-def print_nested_dictionary():
 
+def print_nested_dictionary():
     my_website_users = {
         "auser": {
             "first_name": "john",
@@ -84,7 +128,9 @@ def print_nested_dictionary():
         # If it was retrieved using square brackets throws KeyError if element is not present
         print(f"{user_name}'s real name is {user_info.get('first_name').title()} {user_info.get('last_name').title()}")
 
+
 if __name__ == '__main__':
+    explain_dictionary_methods()
     print_person_details("John", "Doe", 65, "Alberta")
     print_favorite_numbers()
     sorting_a_dictionary()
