@@ -55,7 +55,10 @@ source venv/bin/activate
 * Explain Operator Precedence (hint: P E D M A S rule)
 
 **See [Shallow vs deep copy](python-concepts/shallow-deep-copy.py)
-What is the difference between shallow and deep copy?
+* What is the difference between shallow and deep copy?
+* What are the immutable data types in python, which are mutable?
+* Explain Python pass-by-object-reference concept, how to make data immutable, what are the equivalent immutable types
+of mutable types?
 
 Skipping practice for number basics -
 
@@ -102,7 +105,8 @@ Recollection questions-
 
 * A tuple is an "unmodifiable" or "immutable" list
 * List -> Tuple, Tuple -> List
-* Slicing a tuple - How to skip count when slicing a tuple? Can you slice a string?
+* Slicing a tuple - How to skip count when slicing a tuple? 
+* Can you slice a string?
 * iterating a tuple
 * Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
 * Explain the use of `zip` data structure, when is it useful?
@@ -148,20 +152,28 @@ Recollection questions-
 **Function basics See - [functions_basics.py](python-concepts/functions_basics.py)**
 
 * What are the 2 ways of passing arguments to functions? What is the default?
+* In what order should default values be passed to a function? 
 * How to pass keyword arguments to pass values to functions?
 * Pitfalls of positional arguments?
 * How to make a specific argument passed to a method as optional?
     - for e.g., - among first_name, middle_name, last_name how to make middle_name optional
 * How to prevent a function from modifying an original copy of a `list` data structure?
-* How to pass arbitrary number of arguments(varargs) in a python function (eg. a list of 3 toppings or 5)?
-* What is used to collect non-specific function arguments in a python function?
+* What is the significance of `/` and `*` when used in a function parameter?
+* Why/when to define `*args` and `**kwargs` in a function parameter?
+
+**Yield / Generator concept, see [Yield and Generators](python-concepts/yield_generators.py)**
+* How does yield keyword work, what does it return?
+* What is the exception type thrown by `yield` when the iteration ends ?
+
+**Python Modules See [restaurants.py](python-concepts/restaurants/restaurant.py)**
 
 * Are there any restrictions in where the positional arguments or kwargs can be located in a function declaration?
   (hint: yes, at the end)
 * Recollect the different ways to import modules and functions in python. How to import all the functions in a module?
-* How does relative import work in python. Explain how to import `projects/restaurants/restaurant.py` in
+* How does relative import work in python. Explain how to import `python-concepts/restaurants/restaurant.py` in
   another module `projects/tryit/ex1.py`
 * What is the IDE setting if imports doesn't resolve (hint: Mark as sources root)
+
 
 **Working with Classes, see - [Classes exercises](python-concepts/tryit)**
 
