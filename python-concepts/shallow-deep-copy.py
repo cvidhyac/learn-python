@@ -3,7 +3,7 @@ from types import MappingProxyType
 from typing import Any
 
 
-def execute_an_update(*args) -> Any:
+def execute_an_update(*args) -> None:
     items = [*args]
     for item in items:
         print(f"Item: {item}, its type: {type(item)}")
@@ -18,37 +18,46 @@ def execute_an_update(*args) -> Any:
         elif type(item) == set:
             item.add(15)
     print(f"Inside method: {items}")
-    return items
+
 
 """
 Python uses the concept of "pass-by-object-reference" which is a hybrid of pass by value and pass by reference.
 This is its default behaviour.
 
-When an immutable type is passed, it uses pass-by-value and the parent object is not modified.
-When a mutable type is passed, it uses pass-by-reference thereby parent object is modified.
+When an immutable type is passed, a copy is created (acts like pass-by-value)
+When a mutable type is passed, it refers to the same container (acts like pass-by-reference)
 
 Strategies to prevent unpredictable behaviour using mutable types:
 - convert it to an immutable type before passing it to a function
 - use a shallow / deep copy operation so that the behavior is predictable.
 
 """
+
+
 def how_does_python_references_work():
     an_int, a_list, a_string, a_set, a_dict = 1, [1, 2], "Hello", {1, 3, 5}, {"keyOne": "valueOne",
                                                                               "keyTwo": "valueTwo"}
-    a_copied_list, a_copied_set, a_copied_dict = deepcopy(a_list), deepcopy(a_set), deepcopy(a_dict)
+
+    an_int, a_second_list, a_string, a_second_set, a_second_dict = 1, [1, 2], "Hello", {1, 3, 5}, {"keyOne": "valueOne",
+                                                                                                   "keyTwo": "valueTwo"}
 
     # MappingProxyType is a read-only view of dict, note that to make it immutable use fresh copy instead of original
-    an_immutable_list, an_immutable_set, an_immutable_dict = tuple(deepcopy(a_list)), frozenset(deepcopy(a_set)), MappingProxyType(deepcopy(a_dict))
+    an_immutable_list, an_immutable_set, an_immutable_dict = tuple(deepcopy(a_list)), frozenset(
+        deepcopy(a_set)), MappingProxyType(deepcopy(a_dict))
 
-    final_items_without_copying = execute_an_update(an_int, a_list, a_string, a_set, a_dict)
-    print(f"Outside method without shallow copy : {final_items_without_copying}")
+    print("="*50)
+    execute_an_update(an_int, a_list, a_string, a_set, a_dict)
+    print(f"Outside method, observe original is modified : {an_int, a_list, a_string, a_set, a_dict}")
 
-    final_items_after_deep_copying = execute_an_update(an_int, a_copied_list, a_copied_set, a_copied_dict)
-    print(f"Why doesn't deep copy work here? : {final_items_after_deep_copying}") # a deep copied list still produces a mutable type
+    print("="*50)
+    execute_an_update(an_int, deepcopy(a_second_list), deepcopy(a_second_set), deepcopy(a_second_dict))
+    print(
+        f"Outside method, print original : {a_second_list} {a_second_set} {a_second_dict}")  # a deep copied list still produces a mutable type
 
-    final_true_immutability_test = execute_an_update(an_int, an_immutable_list, a_string, an_immutable_set, an_immutable_dict)
-    print(f"Outside method with true immutable types : {final_true_immutability_test}")
-
+    print("="*50)
+    execute_an_update(an_int, an_immutable_list, a_string, an_immutable_set,
+                                                     an_immutable_dict)
+    print(f"Outside method with true immutable types : { an_immutable_list, an_immutable_set, an_immutable_dict}")
 
 
 """
@@ -73,4 +82,5 @@ def how_does_shallow_deep_copy_work() -> None:
 
 if __name__ == "__main__":
     how_does_shallow_deep_copy_work()
+    print("=" * 50)
     how_does_python_references_work()
