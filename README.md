@@ -49,7 +49,7 @@ source venv/bin/activate
 **See - [operators_basics.py](python-concepts/operators_basics.py)**
 * What are the membership check operators in python?
 * What are the common operators in python?
-* What is the difference between `\\` and `\` division operator in python? (Hint: Integer division vs floating point)
+* What is the difference between `//` and `/` division operator in python? (Hint: Integer division vs floating point)
 * What are the membership operators in python?
 * What are the identity operators in python?
 * Explain Operator Precedence (hint: P E D M A S rule)
@@ -111,6 +111,20 @@ Recollection questions-
 * Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
 * Explain the use of `zip` data structure, when is it useful?
 
+**See [dictionary_basics.py](python-concepts/dictionary_basics.py)**
+
+* Using dictionaries
+* Modifying value in a dictionary for one of the keys
+* Deleting a key from a dictionary (3 ways). How to empty a dictionary?
+* What is the difference between using square brackets to retrieve a value from a dictionary vs using `get()`
+* Iterating dictionaries using `items()`, `keys()`, `values()`
+* What is the default behaviour when neither of the 3 options above are qualified in a `for` loop explicitly, i.e., keys
+  values are not specified in looping condition?
+* Accessing elements from dictionaries
+* How to convert a dictionary to kwargs?
+* Printing kwargs, accessing individual elements in kwargs
+
+
 **See [set_basics.py](python-concepts/set_basics.py)**
 
 * What type of data can be added to set? (hint - hashable vs unhashable)
@@ -124,23 +138,11 @@ Recollection questions-
 * learn usage of `in` and `not in` pattern
 * iterating through list using conditionals along the way
 
+
 **Hashing concept in python [Hashing example](python-concepts/hashing.py)**
 
 * What makes a data structure hashable?
 * What is the real life use case to use a hashable data structure over a non-hashable data structure?
-
-**See [dictionary_basics.py](python-concepts/dictionary_basics.py)**
-
-* Using dictionaries
-* Modifying value in a dictionary for one of the keys
-* Deleting a key from a dictionary (3 ways). How to empty a dictionary?
-* What is the difference between using square brackets to retrieve a value from a dictionary vs using `get()`
-* Iterating dictionaries using `items()`, `keys()`, `values()`
-* What is the default behaviour when neither of the 3 options above are qualified in a `for` loop explicitly, i.e., keys
-  values are not specified in looping condition?
-* Accessing elements from dictionaries
-* How to convert a dictionary to kwargs?
-* Printing kwargs, accessing individual elements in kwargs
 
 **See [user_inputs.py](python-concepts/user_inputs.py)**
 
@@ -164,6 +166,26 @@ Recollection questions-
 **Yield / Generator concept, see [Yield and Generators](python-concepts/yield_generators.py)**
 * How does yield keyword work, what does it return?
 * What is the exception type thrown by `yield` when the iteration ends ?
+
+**Python Scopes - see [scopes.py](python-concepts/scopes.py)**
+* What are the scopes in python, where a variable will be looked up to be resolved?
+  * Hint: LEGB principle (Local -> Enclosed -> Global -> Built-ins)
+* Functions can be declared in local scopes as well, they can access variables in both local and global scopes
+* Global and nonlocal variables
+
+**Programming paradigms**
+- Imperative (procedural, structured, OOPS)
+- Declarative (SQL style, Functional programming)
+
+A pure function has only input and output - no side effects.
+Haskell - purely functional - no loops
+
+* Define Higher Order functions - [higher_order_functions.py](python-concepts/higher_order_functions.py):
+- Function that takes another function as input
+- Lambda functions, anonymous functions etc.,
+
+* Explain the concept of currying from the perspective of functional programming, see [currying.py](python-concepts/currying.py)
+
 
 **Python Modules See [restaurants.py](python-concepts/restaurants/restaurant.py)**
 

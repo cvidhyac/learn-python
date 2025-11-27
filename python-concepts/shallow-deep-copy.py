@@ -1,6 +1,5 @@
 from copy import deepcopy
 from types import MappingProxyType
-from typing import Any
 
 
 def execute_an_update(*args) -> None:

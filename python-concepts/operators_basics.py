@@ -36,7 +36,18 @@ def identity_checker():
     print(f"""when type is not immutable, then same values are stored in different memory
      locations hence considered different values: {list_one is list_two}""")
 
-
+"""
+Demo few operators
+// - integer division
+/ - Floating point division
+% - modulo arithmetic
+"""
+def demo_division():
+    a = 10
+    b = 3
+    as_whole_num = a / b
+    as_floating_point = a // b
+    print(f"The result as Floating point: {as_whole_num} and integer division: {as_floating_point}")
 
 def membership_checker():
     input_str = "pineapple"
@@ -52,5 +63,6 @@ def membership_checker():
 
 
 if __name__ == '__main__':
-    #membership_checker()
     identity_checker()
+    demo_division()
+    #membership_checker()

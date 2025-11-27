@@ -18,8 +18,11 @@ from typing import Generator
 def generate_odd_nums(limit: int) -> Generator[int, None, None]:
     i = 1
     while i < limit:
+        print(f"Value of I is {i}")
         yield i
+        print(f"After yielding {i}")
         i += 2
+        print(f"After incrementing: {i}")
 
 
 if __name__ == '__main__':
@@ -27,6 +30,7 @@ if __name__ == '__main__':
     print(generator, type(generator))  # first iteration, prints start of sequence
     while True:
         try:
+            print("Back to function, executing generator again")
             print(next(generator))
         except StopIteration:
             print(f"Generator stopped due to stop condition")

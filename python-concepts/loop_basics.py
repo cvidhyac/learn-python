@@ -48,6 +48,9 @@ def find_first_three_players():
     players = ["A", "D", "Z", "K", "L", "M"]
     print(f"First 3 players: {[player for player in players[0:3]]}")
 
+"""
+Example of while-else
+"""
 def example_for_while_loop():
     i = 0
     multiples_of_five = []
@@ -58,6 +61,9 @@ def example_for_while_loop():
     else: # the else condition in a while loop only executes if there was no usage of 'break' statement and condition was false
         print(f"The list of multiples of five till 100 are : {multiples_of_five}")
 
+"""
+Continue keyword helps skip an iteration
+"""
 def example_of_continue():
 
     i = 0
