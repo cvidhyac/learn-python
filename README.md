@@ -185,7 +185,8 @@ Haskell - purely functional - no loops
 - Lambda functions, anonymous functions etc.,
 
 * Explain the concept of currying from the perspective of functional programming, see [currying.py](python-concepts/currying.py)
-
+* How to use a `lambda` function?
+* Explain use of `map`, `filter`, `reduce`, `any`, `all`
 
 **Python Modules See [restaurants.py](python-concepts/restaurants/restaurant.py)**
 
