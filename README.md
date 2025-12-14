@@ -187,6 +187,7 @@ Haskell - purely functional - no loops
 * Explain the concept of currying from the perspective of functional programming, see [currying.py](python-concepts/currying.py)
 * How to use a `lambda` function?
 * Explain use of `map`, `filter`, `reduce`, `any`, `all`. see [lambda_functions.py](python-concepts/lambda_functions.py)
+* Explain list comprehension, set comprehension and dict comprehension. What data structure helps in dict comprehension?
 
 **Python Modules See [restaurants.py](python-concepts/restaurants/restaurant.py)**
 
