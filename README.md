@@ -189,6 +189,10 @@ Haskell - purely functional - no loops
 * Explain use of `map`, `filter`, `reduce`, `any`, `all`. see [lambda_functions.py](python-concepts/lambda_functions.py)
 * Explain list comprehension, set comprehension and dict comprehension. What data structure helps in dict comprehension?
 
+## Python and OOPS
+
+### Modules and packages 
+
 **Python Modules See [restaurants.py](python-concepts/restaurants/restaurant.py)**
 
 * Are there any restrictions in where the positional arguments or kwargs can be located in a function declaration?
@@ -197,8 +201,10 @@ Haskell - purely functional - no loops
 * How does relative import work in python. Explain how to import `python-concepts/restaurants/restaurant.py` in
   another module `projects/tryit/ex1.py`
 * What is the IDE setting if imports doesn't resolve (hint: Mark as sources root)
+* What's the difference between package and module in python?
 
 
+### Classes 
 **Working with Classes, see - [Classes exercises](python-concepts/tryit)**
 
 **See [Example with class instantiation and relative imports](python-concepts/relative_imports.py)**
@@ -208,12 +214,29 @@ Haskell - purely functional - no loops
 * How to import multiple classes from a module?
 * How to import entire module?
 * How does alias help in imports?
+* How encapsulation works with Python, how can this be applied to OOPS concepts
+* How polymorphism works in python? See - [polymorphism example](python-concepts/polymorphism.py)
+* How can you make a variable private / protected in python? (Hint - `__` for private `_` for protected)
+* How does `@abstractmethod` work (hint - explain `super()` as well)
+
+**Difference between static and non-static variables in python**
+
+| Non Static Variables                     | Static Variables                  |
+|------------------------------------------|-----------------------------------|
+| variables declared in dunder init method | Variables declared at class level |
+| Accessed with `self`                     | Accessed without `self`           |
+| declare objects/instances                | Access with class                 |
+
+
+### Standard library functions
 
 **Python Standard library**
 
 * Example for `random` and using `randInt`, see [Random Dice](python-concepts/random_dice.py)
 * Example for `random.sample`, see [Lottery analysis](python-concepts/lottery_analysis.py)
 * Class naming conventions (hint: )
+
+### Files
 
 **Working With Files, see [Files Basics](python-concepts/reading_from_files)**
 
@@ -222,8 +245,11 @@ Haskell - purely functional - no loops
 
 **Exception Handling, see [exception basics](python-concepts/exception_basics.py)**
 
-* What happens if a try-except block is not defined?
+* What happens if a try-except block is not defined and error occurs?
 * How to execute a condition only if try block was successful?
+* Explain use of `finally`
+* What is the use of `with` in modules that come supported with this feature (eg: `open()`)
+
 
 **JSON Module, see [storing data basics](python-concepts/storing_data.py)**
 * What is the difference between `json.dumps()` and `json.loads()`, when to use this?

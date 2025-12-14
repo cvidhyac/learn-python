@@ -1,10 +1,11 @@
-from restaurants.restaurant import *
+from restaurants import restaurant as r
 
 def three_restaurants():
-    restaurant_one = Restaurant("Saffron", "Chinese")
-    restaurant_two = Restaurant("Pink", "Asian")
-    restaurant_three = Restaurant("Thai Fusion", "South Asian")
+    restaurant_one = r.Restaurant("Saffron", "Chinese")
+    restaurant_two = r.Restaurant("Pink", "Asian")
+    restaurant_three = r.Restaurant("Thai Fusion", "South Asian")
 
     restaurants = [restaurant_one, restaurant_two, restaurant_three]
     for restaurant in restaurants:
         restaurant.describe_restaurant()
+
