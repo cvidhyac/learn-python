@@ -1,8 +1,7 @@
 import traceback
 
-from pizza_functions.make import make_pizza as mp
-from pizza_functions import cook as c
-from pizza_functions import deliver as d
+from mini_projects.pizza_functions.make import make_pizza as mp
+from mini_projects.pizza_functions import cook as c, deliver as d
 
 """
 In python few rules for functions - 

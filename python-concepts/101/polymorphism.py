@@ -1,4 +1,4 @@
-from shapes import square, circle
+from mini_projects.shapes import square, circle
 
 
 def demo_polymorphism():

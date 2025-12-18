@@ -1,4 +1,5 @@
-from restaurants import restaurant as r
+from mini_projects.restaurants import restaurant as r
+
 
 def three_restaurants():
     restaurant_one = r.Restaurant("Saffron", "Chinese")

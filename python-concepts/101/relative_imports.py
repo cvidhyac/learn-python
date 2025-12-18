@@ -1,6 +1,6 @@
-from tryit.try9192 import *
-from tryit.update_car import exec_car
-from cars.car import Car
+from mini_projects.tryit.try9192 import *
+from mini_projects.tryit.update_car import exec_car
+from mini_projects.cars.car import Car
 
 
 def print_car_info():

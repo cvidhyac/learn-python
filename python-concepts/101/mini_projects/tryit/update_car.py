@@ -1,4 +1,4 @@
-from cars.car import create_car, Car
+from mini_projects.cars.car import create_car, Car
 
 
 def update_car_details(obj: Car, reading: int):

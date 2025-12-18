@@ -31,7 +31,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-**See - [string_basics.py](python-concepts/string_basics.py)**
+**See - [string_basics.py](python-concepts/101/string_basics.py)**
 
 * 101 - Install, Know how to print, compile and run python programs
 * Write comments - `#`
@@ -47,7 +47,7 @@ source venv/bin/activate
 * How to find a substring within a given string
 * What is the difference between `find` and `index` methods in string?
 
-**See - [operators_basics.py](python-concepts/operators_basics.py)**
+**See - [operators_basics.py](python-concepts/101/operators_basics.py)**
 * What are the membership check operators in python?
 * What are the common operators in python?
 * What is the difference between `//` and `/` division operator in python? (Hint: Integer division vs floating point)
@@ -55,7 +55,7 @@ source venv/bin/activate
 * What are the identity operators in python?
 * Explain Operator Precedence (hint: P E D M A S rule)
 
-**See [Shallow vs deep copy](python-concepts/shallow-deep-copy.py)
+**See [Shallow vs deep copy](python-concepts/101/shallow-deep-copy.py)
 * What is the difference between shallow and deep copy?
 * What are the immutable data types in python, which are mutable?
 * Explain Python pass-by-object-reference concept, how to make data immutable, what are the equivalent immutable types
@@ -66,7 +66,7 @@ Skipping practice for number basics -
 - REPL shell - `+`, `-`
 - Using underscores in numbers to make it more readable
 
-**See [list_basics.py](python-concepts/list_basics.py)**
+**See [list_basics.py](python-concepts/101/list_basics.py)**
 
 * List basics - add elements, find elements, remove elements
 * Sorting a list - `sort()`, `sorted()`, `reverse()`, `sort(reverse=True)`
@@ -80,7 +80,7 @@ Skipping practice for number basics -
 * Remove duplicates from a list
 * How to skip count in a list?
 * What is the difference between sequence-controlled iteration and sentinel controlled iteration?
-* Explain how tuple unpacking works? when is it useful? (hint: see [gcd-with-tuple-unpacking](practice/greatest-common-divisor.py))
+* Explain how tuple unpacking works? when is it useful? (hint: see [gcd-with-tuple-unpacking](python-concepts/101/mini_projects/practice/greatest-common-divisor.py))
 
 Recollection questions-
 
@@ -90,9 +90,9 @@ Recollection questions-
 - How to slice a list?
 - What is the index inclusion/exclusion in a range(0, 10) ?
 - What is the index inclusion/exclusion in a slice[0:10] ?
-- How to replace a slice of a list with another list? see - [slicing_tricks](python-concepts/list_basics.py)
+- How to replace a slice of a list with another list? see - [slicing_tricks](python-concepts/101/list_basics.py)
 
-**See [loop_basics.py](python-concepts/loop_basics.py)**
+**See [loop_basics.py](python-concepts/101/loop_basics.py)**
 
 * Simple for loop
 * How to exit a for loop if something is found?
@@ -103,7 +103,7 @@ Recollection questions-
 * Explain what does `continue` placed in a for loop do?
 * Explain usage of enumerate, when can this be used
 
-**See [tuples_basics.py](python-concepts/tuples_basics.py)**
+**See [tuples_basics.py](python-concepts/101/tuples_basics.py)**
 
 * A tuple is an "unmodifiable" or "immutable" list
 * List -> Tuple, Tuple -> List
@@ -113,7 +113,7 @@ Recollection questions-
 * Merge two lists - 2 techniques - using `+`, using extend() - recollect what is the difference in these two techniques
 * Explain the use of `zip` data structure, when is it useful?
 
-**See [dictionary_basics.py](python-concepts/dictionary_basics.py)**
+**See [dictionary_basics.py](python-concepts/101/dictionary_basics.py)**
 
 * Using dictionaries
 * Modifying value in a dictionary for one of the keys
@@ -127,33 +127,33 @@ Recollection questions-
 * Printing kwargs, accessing individual elements in kwargs
 
 
-**See [set_basics.py](python-concepts/set_basics.py)**
+**See [set_basics.py](python-concepts/101/set_basics.py)**
 
 * What type of data can be added to set? (hint - hashable vs unhashable)
 * Recollect methods for set operations
 * Difference between remove and discard
 * Union, Intersection and symmetric differences in sets
 
-**See [conditional_basics.py](python-concepts/conditionals_basics.py)**
+**See [conditional_basics.py](python-concepts/101/conditionals_basics.py)**
 
 * learn `if-else-elif` pattern
 * learn usage of `in` and `not in` pattern
 * iterating through list using conditionals along the way
 
 
-**Hashing concept in python [Hashing example](python-concepts/hashing.py)**
+**Hashing concept in python [Hashing example](python-concepts/101/hashing.py)**
 
 * What makes a data structure hashable?
 * What is the real life use case to use a hashable data structure over a non-hashable data structure?
 
-**See [user_inputs.py](python-concepts/user_inputs.py)**
+**See [user_inputs.py](python-concepts/101/user_inputs.py)**
 
 * User inputs
 * `while` loop - repeating user input until condition is not satisfied
 * How to exit a `while` loop?
 * Can you think of a way to populate a dictionary using user inputs?
 
-**Function basics See - [functions_basics.py](python-concepts/functions_basics.py)**
+**Function basics See - [functions_basics.py](python-concepts/101/functions_basics.py)**
 
 * What are the 2 ways of passing arguments to functions? What is the default?
 * In what order should default values be passed to a function? 
@@ -165,11 +165,11 @@ Recollection questions-
 * What is the significance of `/` and `*` when used in a function parameter?
 * Why/when to define `*args` and `**kwargs` in a function parameter?
 
-**Yield / Generator concept, see [Yield and Generators](python-concepts/yield_generators.py)**
+**Yield / Generator concept, see [Yield and Generators](python-concepts/101/yield_generators.py)**
 * How does yield keyword work, what does it return?
 * What is the exception type thrown by `yield` when the iteration ends ?
 
-**Python Scopes - see [scopes.py](python-concepts/scopes.py)**
+**Python Scopes - see [scopes.py](python-concepts/101/scopes.py)**
 * What are the scopes in python, where a variable will be looked up to be resolved?
   * Hint: LEGB principle (Local -> Enclosed -> Global -> Built-ins)
 * Functions can be declared in local scopes as well, they can access variables in both local and global scopes
@@ -182,20 +182,20 @@ Recollection questions-
 A pure function has only input and output - no side effects.
 Haskell - purely functional - no loops
 
-* Define Higher Order functions - [higher_order_functions.py](python-concepts/higher_order_functions.py):
+* Define Higher Order functions - [higher_order_functions.py](python-concepts/101/higher_order_functions.py):
 - Function that takes another function as input
 - Lambda functions, anonymous functions etc.,
 
-* Explain the concept of currying from the perspective of functional programming, see [currying.py](python-concepts/currying.py)
+* Explain the concept of currying from the perspective of functional programming, see [currying.py](python-concepts/101/currying.py)
 * How to use a `lambda` function?
-* Explain use of `map`, `filter`, `reduce`, `any`, `all`. see [lambda_functions.py](python-concepts/lambda_functions.py)
+* Explain use of `map`, `filter`, `reduce`, `any`, `all`. see [lambda_functions.py](python-concepts/101/lambda_functions.py)
 * Explain list comprehension, set comprehension and dict comprehension. What data structure helps in dict comprehension?
 
 ## Python and OOPS
 
 ### Modules and packages 
 
-**Python Modules See [restaurants.py](python-concepts/restaurants/restaurant.py)**
+**Python Modules See [restaurants.py](python-concepts/101/mini_projects/restaurants/restaurant.py)**
 
 * Are there any restrictions in where the positional arguments or kwargs can be located in a function declaration?
   (hint: yes, at the end)
@@ -207,9 +207,9 @@ Haskell - purely functional - no loops
 
 
 ### Classes 
-**Working with Classes, see - [Classes exercises](python-concepts/tryit)**
+**Working with Classes, see - [Classes exercises](python-concepts/101/mini_projects/tryit)**
 
-**See [Example with class instantiation and relative imports](python-concepts/relative_imports.py)**
+**See [Example with class instantiation and relative imports](python-concepts/101/relative_imports.py)**
 
 * How does inheritance work in python?
 * How to access variables in parent class in child class?
@@ -217,7 +217,7 @@ Haskell - purely functional - no loops
 * How to import entire module?
 * How does alias help in imports?
 * How encapsulation works with Python, how can this be applied to OOPS concepts
-* How polymorphism works in python? See - [polymorphism example](python-concepts/polymorphism.py)
+* How polymorphism works in python? See - [polymorphism example](python-concepts/101/polymorphism.py)
 * How can you make a variable private / protected in python? (Hint - `__` for private `_` for protected)
 * How does `@abstractmethod` work (hint - explain `super()` as well)
 
@@ -234,18 +234,18 @@ Haskell - purely functional - no loops
 
 **Python Standard library**
 
-* Example for `random` and using `randInt`, see [Random Dice](python-concepts/random_dice.py)
-* Example for `random.sample`, see [Lottery analysis](python-concepts/lottery_analysis.py)
+* Example for `random` and using `randInt`, see [Random Dice](python-concepts/101/random_dice.py)
+* Example for `random.sample`, see [Lottery analysis](python-concepts/101/lottery_analysis.py)
 * Class naming conventions (hint: )
 
 ### Files
 
-**Working With Files, see [Files Basics](python-concepts/reading_from_files)**
+**Working With Files, see [Files Basics](python-concepts/101/mini_projects/reading_from_files)**
 
 * How to open a file path and print contents?
 * How to split a file to lines, then concatenate it without whitespace characters
 
-**Exception Handling, see [exception basics](python-concepts/exception_basics.py)**
+**Exception Handling, see [exception basics](python-concepts/101/exception_basics.py)**
 
 * What happens if a try-except block is not defined and error occurs?
 * How to execute a condition only if try block was successful?
@@ -253,5 +253,5 @@ Haskell - purely functional - no loops
 * What is the use of `with` in modules that come supported with this feature (eg: `open()`)
 
 
-**JSON Module, see [storing data basics](python-concepts/storing_data.py)**
+**JSON Module, see [storing data basics](python-concepts/101/storing_data.py)**
 * What is the difference between `json.dumps()` and `json.loads()`, when to use this?
