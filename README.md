@@ -5,7 +5,6 @@
 I used the following learning resources to document my learning journey and for keeping
 track of how well I can recollect the concepts after taking a break.
 
-
 ### Python Books
 
 These are the books that i have used for my personal learning journey and for practice.
@@ -13,6 +12,7 @@ These are the books that i have used for my personal learning journey and for pr
 - [Automate Boring Stuff with Python](https://automatetheboringstuff.com/)
 - [Python crash course 3rd edition by Eric Mathes](https://ehmatthes.github.io/pcc_3e/)
 - [Learning Python, sixth edition](https://learning-python.com/about-lp6e.html)
+- [Intro to Python: learning to program with AI, Big Data and Cloud by Paul Deitel](https://deitel.com/intro-to-python-for-computer-science-and-data-science/)
 
 ## Managing Tutorial Hell
 
