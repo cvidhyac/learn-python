@@ -42,6 +42,7 @@ source venv/bin/activate
     * stripping whitespace - `lstrip()`, `rstrip()`, `strip()`
     * prefix methods - `removePrefix()`, `removeSuffix()`
 * Can you slice a string? What is the rule to remember when slicing?
+* How does slicing with step values work?
 * How to reverse a string
 * How to find a substring within a given string
 * What is the difference between `find` and `index` methods in string?
@@ -69,6 +70,7 @@ Skipping practice for number basics -
 
 * List basics - add elements, find elements, remove elements
 * Sorting a list - `sort()`, `sorted()`, `reverse()`, `sort(reverse=True)`
+* When is `sorted` useful over `sort` (Hint: Immutable data structures where inplace sorting won't work)
 * List Comprehension
 * List slicing
 * List copying

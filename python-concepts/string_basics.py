@@ -13,6 +13,11 @@ def use_string_case():
     print("---------")
     print(f"{as_upper}\n{as_lower}\n{as_title}")
 
+def slicing_with_step_values():
+    test_string = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    step_values = test_string[::2]
+    print("---------")
+    print(f"Every second value of: {test_string}\t{step_values}")
 
 def use_string_whitespace_methods():
     test_string = "       content        "
@@ -66,6 +71,8 @@ if __name__ == '__main__':
     use_string_whitespace_methods()
     use_prefix_methods()
     slicing_a_string("pineapple")
+    reverse_using_slicing("apple")
+    slicing_with_step_values()
     find_substring_at_index("pineapple", "eap")
     reverse_using_slicing("pineapple")
     find_and_index_methods("pineapple", "orange")
