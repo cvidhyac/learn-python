@@ -7,7 +7,7 @@ track of how well I can recollect the concepts after taking a break.
 
 ### Python Books
 
-These are the books that i have used for my personal learning journey and for practice.
+These are the books that I used for my personal learning journey and for practice.
 
 - [Automate Boring Stuff with Python](https://automatetheboringstuff.com/)
 - [Python crash course 3rd edition by Eric Mathes](https://ehmatthes.github.io/pcc_3e/)
