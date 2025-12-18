@@ -44,7 +44,7 @@ def check_path_exists(path):
     print("Does path exist? : " + str(os.path.exists(path)))
 
 def walk_directory():
-    tuple_structure = os.walk("../../learn-python")
+    tuple_structure = os.walk("../../..")
     #For each folder name in the tuple structure walk through each subdirectory
     for folder_name, subdirectory, filenames in tuple_structure:
         print("The current foldername is : " + folder_name)

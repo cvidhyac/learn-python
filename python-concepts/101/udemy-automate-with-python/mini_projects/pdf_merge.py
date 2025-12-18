@@ -17,8 +17,8 @@ def append_pages_to_writer(pdf_reader, pdf_writer):
 
 
 def pdf_merge():
-    pdf_reader_one = read_pdf(".././resources/sample_file.pdf")
-    pdf_reader_two = read_pdf(".././resources/sample_file2.pdf")
+    pdf_reader_one = read_pdf("../resources/sample_file.pdf")
+    pdf_reader_two = read_pdf("../resources/sample_file2.pdf")
     output_file = open(".././resources/combined_file.pdf", "wb")
     writer = PyPDF2.PdfFileWriter()
     writer = append_pages_to_writer(pdf_reader_one, writer)

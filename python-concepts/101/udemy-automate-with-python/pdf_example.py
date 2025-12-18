@@ -15,4 +15,4 @@ def open_pdf_file(file_path):
     pdf_file = PyPDF2.PdfFileReader(file_stream)
     logging.info("Number of pages in file :" + str(pdf_file.numPages))
 
-open_pdf_file("./resources/sample_file.pdf")
+open_pdf_file("resources/sample_file.pdf")

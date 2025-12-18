@@ -9,14 +9,14 @@ import send2trash
 
 # Use shutil.copy to copy a specific file with a new name
 def file_copy():
-  new_copy_name = shutil.copy("./resources/email_phone_numbers.txt",
+  new_copy_name = shutil.copy("resources/email_phone_numbers.txt",
                               "./resources/email_backup")
   print("file copied: " + new_copy_name)
 
 
 # Use Copy Tree to copy an entire directory path
 def directory_copy():
-  new_dir_location = shutil.copytree("./resources", "./resources_backup")
+  new_dir_location = shutil.copytree("resources", "./resources_backup")
   print("directory copied : " + new_dir_location)
 
 
@@ -38,7 +38,7 @@ def delete_directory():
     "the provided directory resources_backup is deleted, cannot be recovered")
 
 def send_to_trash():
-  shutil.copytree("./resources", "./resources_backup")
+  shutil.copytree("resources", "./resources_backup")
   path =  send2trash.send2trash("./resources_backup")
   print("Path sent to trash : " + "./resourcees_backup")
 

@@ -47,7 +47,7 @@ class StoreUserDetails:
 
 
 def exec_favorite_nums():
-    file_store = "mini_projects/text_files/store_to_file.txt"
+    file_store = "../mini_projects/text_files/store_to_file.txt"
     prompt_or_quit = input("Favorite numbers, enter q to quit prompt: ")
     while prompt_or_quit != 'q':
         favorite_num = input("Enter your favorite number as numeric: ")
@@ -81,7 +81,7 @@ def exec_write_user_details():
         age = input("Enter age: ")
         if age.isnumeric():
             user = User(first_name, last_name, int(age))
-            store_details_obj = StoreUserDetails(user, "mini_projects/text_files/remember-me.txt")
+            store_details_obj = StoreUserDetails(user, "../mini_projects/text_files/remember-me.txt")
             store_details_obj.store_user_details()
             print("User details stored successfully!")
             is_user_valid = True
@@ -98,7 +98,7 @@ class ReadUserDetails:
         return json.loads(contents)
 
 def exec_read_user_details():
-    read_user_details_obj = ReadUserDetails("mini_projects/text_files/remember-me.txt")
+    read_user_details_obj = ReadUserDetails("../mini_projects/text_files/remember-me.txt")
     retrieved_user = read_user_details_obj.read_user_details()
     retrieved_user_first_name = retrieved_user["first_name"]
     print(f"User details: {retrieved_user_first_name}")

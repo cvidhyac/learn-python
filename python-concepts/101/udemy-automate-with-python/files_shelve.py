@@ -32,17 +32,17 @@ def shelve_demo(file_path):
   read_contents_as_list = read_file.read().splitlines()
 
   # Create a shelve file with open function and write a list to it
-  write_dat_file = shelve.open("./resources/new_data_file")
+  write_dat_file = shelve.open("resources/new_data_file")
   write_dat_file['file_contents'] = read_contents_as_list
   write_dat_file.close()
   # Read the lsit and continue processing
-  shelve_file = shelve.open("./resources/new_data_file")
+  shelve_file = shelve.open("resources/new_data_file")
   print("The length of shelve_read list is : " + str(
       len(shelve_file['file_contents'])))
 
 
 def demo():
-  file_path = "./resources/email_phone_numbers.txt"
+  file_path = "resources/email_phone_numbers.txt"
   open_file_as_read(file_path)
   file_append(file_path)
   print_last_line_in_a_file(file_path)
