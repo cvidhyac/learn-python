@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "learn-python"
 version = "0.1.0"
-description = ""
-authors = ["Vidhya Chidambaram <vchidamb@redhat.com>"]
+description = "Vidhya's practice repository for learning python"
+authors = ["Vidhya Chidambaram <vidhya.chidambaram@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.14"
-pytest = "^8.3.5"
+pytest = "^9.0.2"
 
 
 [build-system]

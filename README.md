@@ -14,7 +14,7 @@ These are the books that I used for my personal learning journey and for practic
 - [Learning Python, sixth edition](https://learning-python.com/about-lp6e.html)
 - [Intro to Python: learning to program with AI, Big Data and Cloud by Paul Deitel](https://deitel.com/intro-to-python-for-computer-science-and-data-science/)
 
-## Managing Tutorial Hell
+## Managing Tutorial Hell (by writing a lot of code)
 
 - [Python 101](python-concepts/101/README.md)
 - [Python 102](python-concepts/102/README.md)

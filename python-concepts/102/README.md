@@ -9,4 +9,4 @@ functions because they accept an iterable and return a single value in response
 
 Recollect:
 * What is the difference between list comprehensions and generator expressions?
-* 
+* How to perform case-insensitive compare in strings?
