@@ -17,4 +17,6 @@ functions because they accept an iterable and return a single value in response
 
 Recollect:
 * What is the difference between list comprehensions and generator expressions?
-* How to perform case-insensitive compare in strings?
+* How to perform case-insensitive compare in strings? (hint: str.casefold())
+* How can you chart a barplot for a six-sided dice roll ? See - [Static Visualizations](static_visualizations.py)
+* 
