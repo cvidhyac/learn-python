@@ -1,5 +1,13 @@
 # Python 102 README
 
+## Using poetry
+
+`poetry env use $(pyenv which python)`
+
+`poetry add matplotlib seaborn`
+
+`poetry run jupyter lab`
+
 ## Higher order functions
 
 * The basic statistical functions like `mean`, `median`, `mode`, `sum`, `count` are all types of "reduce"
