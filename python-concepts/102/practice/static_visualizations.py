@@ -20,6 +20,7 @@ def demo_die_roll():
     values, frequencies = np.unique(rolls, return_counts=True)
     axes = sns.barplot(x=values, y=frequencies, palette="muted", hue=values, legend=False)
     axes.set_title(f"Die rolls for {len(rolls)} times")
+    axes.set(xlabel="Die Value", ylabel="Frequency")
     plt.show()
 
 if __name__ == '__main__':

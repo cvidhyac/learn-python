@@ -7,6 +7,27 @@ The benefit of using hash based data structure is quick retrieval, saves searchi
 """
 
 
+def reverse_key_value_dict():
+    example_dict = {
+        "a": 1,
+        "b": 2,
+        "c": 3,
+    }
+    reversed_dict = {number: name for name, number in example_dict.items()}
+    print(reversed_dict)
+
+def demo_dict_update():
+    example_dict = {
+        "a": 1,
+        "b": 2,
+        "c": 3,
+        "d": 4,
+    }
+    example_dict.update({"a": 5})
+    example_dict.update({"e": 6})
+    example_dict.update(c=1)
+    print(example_dict)
+
 def explain_dictionary_methods():
     example_dict = {
         "myTuple": (1, 2, 3, 4),
@@ -138,3 +159,5 @@ if __name__ == '__main__':
     print_favorite_places()
     print_nested_dictionary()
     print_person_details_as_kwargs(**dictionary_as_kwargs())
+    demo_dict_update()
+    reverse_key_value_dict()

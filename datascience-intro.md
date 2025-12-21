@@ -18,8 +18,8 @@ Standard deviation: sqrt of variance
 
 ## Numpy
 
-* Numeric python - most two dimensional array in python always use numpy
-* Pandas is based on numpy
+* Numeric python - most two-dimensional array in python always use numpy
+* Pandas library is based on numpy
 
 ## Data visualization
 - seaborn
