@@ -29,7 +29,7 @@
 ## Data Visualization
 
 * What are the basic stat functions in python (mean, median, mode, sum, count,
-  range) [Stat functions](practice/stat_functions.py)
+  range) [Stat functions](practice/numpy_stat_functions.py)
 * How can you chart a barplot for a six-sided dice roll ?
   See - [Static Visualizations](practice/static_visualizations.py)
 
@@ -65,6 +65,8 @@ Standard deviation: sqrt of variance
 Numpy has a high performance array called as `ndarray` that is 35% more performant than the list array data structure
 in python.
 
+### ndarray basics
+
 **See [numpy_ndarray](practice/numpy_ndarray.py)**
 
 * How to find out the datatype of a numpy array?
@@ -75,9 +77,6 @@ in python.
 * Explain the `arange` function? How similar or different is it from `range`?
 * How to generate floating point array ranges using numpy?
 * What is the purpose of `reshape` in numpy?
-
-### Array operators in numpy
-
 * How does array broadcasting work in numpy?
 * What is the use of `linspace` function in numpy?
 
@@ -89,6 +88,19 @@ in python.
 
 ### Numpy array operations
 
+See - [Numpy Array Operations](practice/numpy_array_ops.py)
+
 * How to choose to find specific rows in ndarray?
 * How to find specific columns in ndarray?
 * How to slice data from ndarray?
+* How to transpose an `ndarray`?
+* How does array horizontal stack and vertical stacking work?
+
+### Numpy object references
+
+See - [Numpy References](practice/numpy_references.py)
+
+* What is the difference between `copy` and `view` in numpy?
+* How does `deepcopy` work?
+* What is the difference between `flatten` and `ravel`?
+
