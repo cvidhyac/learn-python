@@ -104,3 +104,45 @@ See - [Numpy References](practice/numpy_references.py)
 * How does `deepcopy` work?
 * What is the difference between `flatten` and `ravel`?
 
+## Pandas
+
+* Created by Wes Mckinney
+* `pandas` - `panel datas`, for data measurements derived over time
+* 2 key data structures - `Series` and `DataFrames`
+* Series is used for one-dimensional collections, Dataframes for two-dimensional data
+* SQL style data manipulations
+
+Pandas uses numpy under the hood hence good basics on numpy helps!
+
+Later read Wes Mckinney's book - Data wrangling with numpy, pandas and ipython
+
+### Pandas Series
+
+See - [Pandas Intro](practice/pandas_series.py)
+
+* How to create a pandas `Series` with custom indices?
+* Does pandas have inbuilt stats methods, how does it offer more convenience than using numpy?
+* What happens when we add string functionality into Series, does it modify parent array?
+
+
+### Pandas DataFrames
+
+* Enhanced two-dimensional array with support for missing data. This is a key benefit as numpy only handles
+homogeneous integer types.
+* Additional operations and capabilities that are useful in datascience tasks.
+
+Practice: [Pandas Dataframes](practice/pandas_dataframes.py)
+
+* How is `pandas` Dataframe stats compare to numpy or pandas.Series stats?
+* How to define precision for stats returned in pandas `describe` operation?
+* How to assign custom index labels while creating a dataframe?
+* What is the difference between `loc` and `iloc` attributes in dataframes?
+* Explain how slicing by row and column works in pandas dataframes?
+* How to select specific rows or columns ?
+* How to select all rows while slicing data?
+* How does boolean indexing work in dataframes? What value is replaced in columns that don't match given condition?
+* Explain `at` and `iat`, when is this useful?
+* What is the difference between using `T` vs `transpose()` methods for dataframes / numpy?
+* How to sort dataframes?
+* How does transpose work?
+* 
