@@ -1,5 +1,9 @@
 # Python 102 README
 
+* Understand data visualization capabilities in python
+* Introduction to Numpy
+* Introduction to Pandas
+
 ## Using poetry
 
 `poetry env use $(pyenv which python)`

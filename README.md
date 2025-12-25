@@ -18,3 +18,4 @@ These are the books that I used for my personal learning journey and for practic
 
 - [Python 101](python-concepts/101/README.md)
 - [Python 102](python-concepts/102/README.md)
+- [Python 103](python-concepts/103/README.md)

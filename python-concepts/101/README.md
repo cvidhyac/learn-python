@@ -1,5 +1,9 @@
 # Python 101 README
 
+* All Python 101 concepts, basic datastructures
+* Strings, Lists, Sets, Dict, Tuples - methods, key concepts
+* Basic error and exception handling, high level oops concepts
+
 ## Udemy - Automate with Python
 
 * Python refresher course (I don't recollect which one i used) <br/>
