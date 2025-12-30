@@ -39,9 +39,27 @@ See - [Pandas RegEx](practice/pandas_regex.py)
 
 ## File processing
 
+see - [Files Review](practice/files_review.py)
+
 - What is the use of `with` statement in resource management? Can it only be used with files?
 - How to create a new file and append data in python?
 - What is the use of `sys` module in python?
 - How to remove a file in python from disk? On the same line, how to rename a file?
 - what is the difference using `readlines` in python vs using an iterator to read one line at a time?
+- What is the difference using `split(" ")` vs `split()` default while splitting a line?
+- What are the file open modes in python ? (Hint - There are six of them)
 
+## JSON module
+
+See - [JSON Review](practice/json_review.py)
+
+- What is the difference between `json.dump()` and `json.dumps()` method?
+- What is the use of `json.load`? 
+- How to pretty-print contents of a file containing json objects?
+
+
+## CSV files
+
+* `csv` module is used, many libraries also support CSV processing
+* How to read and write to csv using this module?
+* How to create csv from pandas dataframes, how to read a csv file into pandas dataframe?

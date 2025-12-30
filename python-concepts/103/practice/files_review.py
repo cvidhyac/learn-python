@@ -28,7 +28,7 @@ def demo_update_file_contents() -> None:
     """
     temp_file = open('../attachments/temp.txt', mode='w')
     orig_file = open('../attachments/accounts.txt', mode='r')
-    with temp_file, orig_file :
+    with temp_file, orig_file:
         for line in orig_file:
             emp_id, name, salary = line.split(" ")
             if name.casefold() != "rose":
@@ -39,7 +39,25 @@ def demo_update_file_contents() -> None:
                 temp_file.write(new_line)
 
     os.rename('../attachments/temp.txt', '../attachments/accounts.txt')
-    print("Done updating file contents")
+    print("Done updating file contents for Rose")
+    temp_file = open('../attachments/temp_two.txt', mode='w')
+    orig_file = open('../attachments/accounts.txt', mode='r')
+
+    # When splitting a line, if default split() is used, it splits on both whitespaces and line breaks, so that gets removed.
+    # Hence, either split by whitespace character OR append a `\n` to the end to avoid incorrect behavior from the program
+
+    with temp_file, orig_file:
+        for line in orig_file:
+            emp_id, name, salary = line.split()
+            if name.casefold() == "joey":
+                name = "Smith"
+                new_line = " ".join([emp_id, name, salary, "\n"])
+                temp_file.write(new_line)
+            else:
+                temp_file.write(line)
+    os.rename('../attachments/temp_two.txt', '../attachments/accounts.txt')
+    print("Done updating file contents for Smith")
+
 
 def read_file_with_formatting():
     """
@@ -53,6 +71,7 @@ def read_file_with_formatting():
             account_id, name, balance = line.split()
             print(f"{account_id:<15}{name:<10}{float(balance):.3f}")
 
+
 def read_all_lines_from_file() -> None:
     """
     `file_obj.readlines()` help read all lines from a file, however it is very memory intensive for large files
@@ -62,14 +81,25 @@ def read_all_lines_from_file() -> None:
     with open('../attachments/accounts.txt', mode='r') as read_file:
         all_lines = read_file.readlines()
         for line in all_lines:
-            print(line.replace("\n", "")) #print already has `\n separator
+            print(line.replace("\n", ""))  # print already has `\n separator
+
+
+def file_open_modes():
+    """
+    r = read, r+ = read and
+    w = write, overwrites existing content, w+ = write and read
+    a = append, a+ = read and append, if file doesn't exist its created, new data written to end of file.
+
+    :return:
+    """
+
 
 if __name__ == '__main__':
-    print("*"*15 + "create_new_file" + "*"*15)
+    print("*" * 15 + "create_new_file" + "*" * 15)
     create_new_file()
-    print("*"*15 + "update_file_contents" + "*"*15)
+    print("*" * 15 + "update_file_contents" + "*" * 15)
     demo_update_file_contents()
-    print("*"*15 + "read_file_with_formatting" + "*"*15)
+    print("*" * 15 + "read_file_with_formatting" + "*" * 15)
     read_file_with_formatting()
-    print("*"*15 + "read_all_lines_from_file" + "*"*15)
+    print("*" * 15 + "read_all_lines_from_file" + "*" * 15)
     read_all_lines_from_file()
