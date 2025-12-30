@@ -1,3 +1,9 @@
+
+def format_money():
+    money_value = 50000
+    formatted_money = f"{money_value:,.2f}"
+    print(formatted_money)
+
 def join_with_comma():
     str_with_comma = ",".join([str(num) for num in range(10)])
     print(str_with_comma)
@@ -77,3 +83,4 @@ if __name__ == '__main__':
     partitioning_a_string()
     practice_ex_one()
     character_testing_methods()
+    format_money()

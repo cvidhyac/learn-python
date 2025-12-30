@@ -6,6 +6,8 @@
 
 ## Recollection questions
 
+See - [Strings Review](practice/strings_review.py)
+
 * How to `partition` a string? when is this useful? What's the difference of `partition` from a `split`?
 * What is the use of `reversed` keyword on a list?
 * How to append a comma after every element of the number "0 1 2 4 5"?
@@ -13,6 +15,9 @@
 * How to format a money value with comma?
 
 ## Regex questions
+
+See - [Regex Practice](practice/regex_review.py)
+
 - How to use the `re` module in python, what are the commonly used functions?
 - How to find exact match?
 - What is the difference between `search` and `match` functions?
@@ -23,9 +28,20 @@
 - What is the difference between `findall` and `finditer`
 - how to capture subgroups in regex?
 
-## Data munging
+## Data munging with Pandas
+
+See - [Pandas RegEx](practice/pandas_regex.py)
+
 - data munging = data cleaning
 - Two common operations: data cleaning, data transformation
-- 
+- Can RegEx be used in pandas Series? What is the difference between `match` and `contains`?
+- How to apply regex on dataframes to replace a column with different format?
 
+## File processing
+
+- What is the use of `with` statement in resource management? Can it only be used with files?
+- How to create a new file and append data in python?
+- What is the use of `sys` module in python?
+- How to remove a file in python from disk? On the same line, how to rename a file?
+- what is the difference using `readlines` in python vs using an iterator to read one line at a time?
 
