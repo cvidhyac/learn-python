@@ -1,6 +1,22 @@
 import csv
 import pandas as pd
 import numpy as np
+from matplotlib import pyplot as plt
+
+
+def load_csv_from_url():
+    titanic_survivors_df = pd.read_csv("https://vincentarelbundock.github.io/Rdatasets/csv/carData/TitanicSurvival.csv")
+    pd.set_option('display.precision', 2)
+    print(f"Head of data: {titanic_survivors_df.head()}")
+    print(f"Tail of data: {titanic_survivors_df.tail()}")
+    titanic_survivors_df.columns = [f"{"survivor_name":<15}", f"{"survival_status":15}", f"{"gender":<20}", f"{"age":<15}", f"{"passenger_class":<15}"]
+    print(titanic_survivors_df)
+    extract_survivors = (titanic_survivors_df["survival_status"] == "yes")
+    print(f"Describing survivors with status YES: {extract_survivors.describe()}")
+    histogram = titanic_survivors_df.hist()
+    print(f"Histogram of survivors with status YES: {histogram}")
+    plt.hist(titanic_survivors_df["survival_status"])
+    plt.show()
 
 
 def csv_with_pandas_read_and_write():
@@ -74,3 +90,5 @@ if __name__ == '__main__':
     practice_csv_basics()
     print("*"*15 + "practice csv with pandas" + "*"*15)
     csv_with_pandas_read_and_write()
+    print("*"*15 + "practice csv from file" + "*"*15)
+    load_csv_from_url()
